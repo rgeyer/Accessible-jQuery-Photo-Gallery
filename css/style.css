@@ -1,0 +1,86 @@
+/*#slideshow #slidesContainer {*/
+#photos {
+  margin:0 auto;
+  width:520px;
+  height:333px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+
+/*#slideshow #slidesContainer .slide {*/
+#photos p { 
+  margin:0 auto;
+  width:500px; /* reduce by 20 pixels to avoid horizontal scroll */
+  height:333px;
+}
+
+/**
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:39px;
+  height:263px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url('../images/left.png') no-repeat 0 0;
+}
+#rightControl {
+  top:0;
+  right:10px;
+  background:transparent url('../images/right.png') no-repeat 0 0;
+}
+
+#slideshow-caption {
+	width:500px;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:#fff;
+	background:#000;
+	z-index:500;
+}
+
+#slideshow-caption .slideshow-caption-container {
+	padding:5px 10px;
+	z-index:1000;
+}
+
+#photos .slideshow-caption-control {
+  width: 32px;
+  height: 32px;
+  z-index:1001;
+}
+
+#photos .slideshow-caption-control-show {
+  position: absolute;
+  bottom: 5px;
+  right: 23px;
+  background: url('../images/information.png');
+}
+
+#photos .slideshow-caption-control-hide {
+  position: absolute;
+  right: 10px;
+  background: url('../images/stop.png');
+}
+
+#slideshow-caption h3 {
+	margin:0;
+	padding:0;
+	font-size:14px;
+}
+
+#slideshow-caption p {
+  position: absolute;
+  top: 0;
+  left: 5px;
+	margin:5px 0 0 0;
+	padding:0;
+}
